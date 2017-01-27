@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<center>
+<div id="login">
+<h2>USER LOGIN</h2>
+ENTER USERNAME<input type="text" id="user_name" placeholder="Enter Username"><br>
+ENTER PASSWORD<input type="password" id="password" placeholder="Enter Password"><br>
+<button onclick="validate();">SUBMIT</button>
+<div id="printResult"></div>
+</div>
+</center>
+<script>
+function validate(){
+console.log("inside validate");
+var httpObject=new XMLHttpRequest();
+httpObject.onreadystatechange=function()
+{
+	console.log(this.readyState);
+	document.getElementById("printResult").innerHTML=this.readyState;
+	if(this.readyState=='4' && this.status=='200')
+	{
+		var result=this.responseText; 
+		result=JSON.parse(result);
+			if(result.status==200)
+			{
+				alert(document.cookie);
+				if(result.userType=="User"){
+				console.log(result.message);
+				document.getElementById("printResult").innerHTML=result.message;
+				document.location.href="user_home.html";
+				}
+				else{
+				console.log(result.message);
+				document.getElementById("printResult").innerHTML=result.message;
+				window.location="admin_home_viewall.html";
+				}
+			}
+			else{
+				console.log(result.message);
+				document.getElementById("printResult").innerHTML=result.message;
+			}
+	}
+}
+httpObject.open('POST','http://127.0.0.1:8081',true);
+httpObject.setRequestHeader('content-type','application/x-www-form-urlencoded');
+
+httpObject.send('eid='+document.getElementById('user_name').value+'&password='+document.getElementById('password').value);
+}
+</script>
+</body>
+</html>

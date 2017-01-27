@@ -1,0 +1,165 @@
+/*body{
+	
+	margin: auto;
+	background-color: #efe9e5;
+}
+#welcome{
+	
+	float: left;
+	width: 30%;
+	margin:0 0 0 650px;
+}
+#welcome h5{
+	
+	margin: 20px 0 20px 0px;
+	font-size: 15px;
+	color: #efe9e5;
+	font-size: 20px;
+	width: 30%;
+	float: left;
+	margin-left: 0px;
+	font-size: 25px;
+}
+#welcome_username{
+	 width: 40%;
+	display: inline;
+	float: left;
+	font-size: 25px;
+	margin: 17px 0 0 0;
+	color: white;
+}
+
+#heading{
+	background-color: #01295c;
+	width: 100%;
+	float: left;
+}
+#logout{
+	padding: 23px;
+	width: 220px;
+	font-style: 10px;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	width: 30%;
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+	width: 100%;
+}
+.input1{
+	padding: 10px;
+}
+
+#item_details{
+	width: 70%;
+	float: left;
+
+}
+#left{
+	float: left;
+	width: 45%;
+}
+#input1{
+	display: inline;
+	margin: 5px 0 5px 30px;
+}
+.leftsideText{
+	width: 40%;
+	margin-left: 20px;
+}
+.leftSelect{
+	padding: 0 95px 0 0;
+}
+#right{
+	float: left;
+	width: 45%;
+	margin-left: 20px;
+}
+.side-bar:hover{
+		background-color: red;
+		width: 100%;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #337ab7;
+}
+#addItem{
+	float: left;
+	width: 100%;
+	border-style: outset;
+	background-color: #c6af92;
+}
+#addItem table {
+	width: 100%;
+}
+.headerButton{
+	background-color: #337ab7;
+}
+#submit{
+	float: right;
+	clear: both;
+}
+#itemTableHeader{
+	padding: 15px 0 15px 0;
+	background-color: #b9cfed;
+}
+#delete{
+	border-style: none;
+	background-color: #b9cfed;
+}
+table {
+	border-spacing: 10px;
+	
+	border-collapse: separate;
+
+}
+.list-unstyled {
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
+}*/
+
+.container{
+min-height: 589px;
+}
+
+th{
+	min-width: 190px;
+}
+.Purchase_Details_data{
+	float: left;
+}
+#change_password{
+	float: right;
+}
+#reset_data {
+
+	background-color: #decba5; 
+	float: left;
+}
+#addItem{
+	margin-left: 0px !important;
+	float: right;
+}
+footer{
+	background-color: black;
+	color: white;
+	width: 100%;
+}
+@media only screen and (min-width: 375px) {
+	th{
+	min-width: 80px !important;
+	}
+	.col-sm-7{
+		margin: auto;
+	}
+
+
+}
